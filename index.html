@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  
+  <!-- SEO Meta Tags -->
+  <title>linq · circuit simulation for education & engineering</title>
+  <meta name="description" content="linq is a professional circuit simulator with real-time SPICE, 500+ components, and multiplayer labs. Free for education. Used by 12,000+ classrooms.">
+  <meta name="keywords" content="circuit simulation, SPICE, electronics, engineering education, online circuit simulator, linq, multiplayer labs">
+  <meta name="author" content="linq team">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://linq.circuits/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://linq.circuits/">
+  <meta property="og:title" content="linq · circuit simulation for education & engineering">
+  <meta property="og:description" content="Professional circuit simulator with real-time SPICE, 500+ components, and multiplayer labs. Free for education.">
+  <meta property="og:image" content="https://linq.circuits/og-image.jpg">
+  <meta property="og:site_name" content="linq">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://linq.circuits/">
+  <meta name="twitter:title" content="linq · circuit simulation for education & engineering">
+  <meta name="twitter:description" content="Professional circuit simulator with real-time SPICE, 500+ components, and multiplayer labs. Free for education.">
+  <meta name="twitter:image" content="https://linq.circuits/twitter-image.jpg">
+  
+  <!-- Favicon (placeholders) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="cssstyle/style.css">
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "linq",
+    "description": "Professional circuit simulation for education and engineering. Real-time SPICE, 500+ components, multiplayer labs.",
+    "applicationCategory": "EducationalApplication, EngineeringApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "1250"
+    },
+    "creator": {
+      "@type": "Organization",
+      "name": "linq labs",
+      "url": "https://linq.circuits"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="header-wrapper">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="logo" aria-label="linq home">
+        <i class="fas fa-bolt" aria-hidden="true"></i>
+        <span>linq</span>
+      </div>
+      
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#" data-demo="simulator">simulator</a>
+        <a href="#" data-demo="lab">lab</a>
+        <a href="#" data-demo="examples">examples</a>
+        <a href="#" data-demo="docs">docs</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon" aria-hidden="true"></i> theme
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- hero section -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-left">
+        <h1>
+          simulate circuits, <br><span style="color: var(--primary);">flow state</span>
+        </h1>
+        <p>
+          Professional circuit simulation for education and beyond. Real‑time SPICE, 500+ components, and collaborative tools.
+        </p>
+        <div class="hero-buttons">
+          <a href="#" class="btn-primary" data-demo="launch"><i class="fas fa-play" aria-hidden="true"></i> launch</a>
+          <a href="#" class="btn-outline" data-demo="explore"><i class="fa-regular fa-compass" aria-hidden="true"></i> explore</a>
+        </div>
+      </div>
+
+      <div class="hero-right" data-demo="waveform">
+        <div style="position:absolute; bottom:20px; left:20px; color: var(--text-soft); font-size:0.8rem; z-index:2;">
+          <i class="fa-regular fa-wave-square" aria-hidden="true"></i> live waveform
+        </div>
+      </div>
+    </section>
+
+    <!-- stats -->
+    <div class="stats-grid" aria-label="Key statistics">
+      <div class="stat-card reveal">
+        <div class="stat-number" id="stat1">2.4k</div>
+        <div class="stat-label">active circuits</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-number" id="stat2">512</div>
+        <div class="stat-label">components</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-number" id="stat3">98%</div>
+        <div class="stat-label">satisfaction</div>
+      </div>
+    </div>
+
+    <!-- features -->
+    <section class="features" aria-labelledby="features-heading">
+      <h2 id="features-heading" class="section-title reveal"><i class="fas fa-microchip" aria-hidden="true"></i> why engineers choose linq</h2>
+      <div class="features-grid">
+        <article class="feature-card reveal" data-demo="feature1">
+          <div class="feature-icon"><i class="fas fa-bolt" aria-hidden="true"></i></div>
+          <h3>real‑time SPICE</h3>
+          <p>Industry accuracy with instant feedback. Modify and see results immediately.</p>
+          <div class="feature-tag">transient analysis</div>
+        </article>
+        <article class="feature-card reveal" data-demo="feature2">
+          <div class="feature-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+          <h3>live oscilloscope</h3>
+          <p>Probe any node, view waveforms, FFT, Bode plots. Export PNG/CSV.</p>
+          <div class="feature-tag">4 channels</div>
+        </article>
+        <article class="feature-card reveal" data-demo="feature3">
+          <div class="feature-icon"><i class="fas fa-cubes" aria-hidden="true"></i></div>
+          <h3>500+ components</h3>
+          <p>From passive to digital: op‑amps, 555 timers, Arduino, custom ICs.</p>
+          <div class="feature-tag">community library</div>
+        </article>
+        <article class="feature-card reveal" data-demo="feature4">
+          <div class="feature-icon"><i class="fas fa-people-group" aria-hidden="true"></i></div>
+          <h3>multiplayer labs</h3>
+          <p>Collaborate in real‑time with students or colleagues. Perfect for remote.</p>
+          <div class="feature-tag">chat & annotations</div>
+        </article>
+        <article class="feature-card reveal" data-demo="feature5">
+          <div class="feature-icon"><i class="fas fa-cloud" aria-hidden="true"></i></div>
+          <h3>cloud sync</h3>
+          <p>Save projects online. Access anywhere, share with one click.</p>
+          <div class="feature-tag">auto‑backup</div>
+        </article>
+        <article class="feature-card reveal" data-demo="feature6">
+          <div class="feature-icon"><i class="fas fa-hand-holding-heart" aria-hidden="true"></i></div>
+          <h3>free for education</h3>
+          <p>No subscriptions for classrooms. Open core with premium options.</p>
+          <div class="feature-tag">donate‑ware</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- showcase -->
+    <section class="showcase" aria-labelledby="showcase-heading">
+      <h2 id="showcase-heading" class="section-title reveal"><i class="fa-regular fa-circle-play" aria-hidden="true"></i> try these examples</h2>
+      <div class="showcase-grid">
+        <article class="demo-card reveal" data-demo="555">
+          <div class="demo-preview"><i class="fas fa-microchip" aria-hidden="true"></i></div>
+          <h4>555 timer</h4>
+          <p>Astable multivibrator – blink LED, adjust frequency.</p>
+          <a href="#" class="demo-link" data-demo="555-link">open example →</a>
+        </article>
+        <article class="demo-card reveal" data-demo="filter">
+          <div class="demo-preview"><i class="fas fa-wave-square" aria-hidden="true"></i></div>
+          <h4>op‑amp filter</h4>
+          <p>Active low‑pass with real‑time bode plot.</p>
+          <a href="#" class="demo-link" data-demo="filter-link">open example →</a>
+        </article>
+        <article class="demo-card reveal" data-demo="rectifier">
+          <div class="demo-preview"><i class="fas fa-diode" aria-hidden="true"></i></div>
+          <h4>bridge rectifier</h4>
+          <p>Full‑wave with smoothing capacitor.</p>
+          <a href="#" class="demo-link" data-demo="rectifier-link">open example →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- testimonials -->
+    <section class="testimonials" aria-labelledby="testimonials-heading">
+      <h2 id="testimonials-heading" class="section-title reveal"><i class="fa-regular fa-message" aria-hidden="true"></i> trusted by educators</h2>
+      <div class="testimonial-grid">
+        <article class="testimonial reveal" data-demo="testimonial1">
+          <i class="fa-solid fa-quote-right" style="font-size:2rem; color:var(--primary);" aria-hidden="true"></i>
+          <p>"linq transformed our electronics lab. Students grasp concepts faster with real‑time visualization."</p>
+          <div class="author">
+            <div class="author-avatar" aria-label="Sarah Chen avatar">SC</div>
+            <div>
+              <h4>Dr. Sarah Chen</h4>
+              <span style="color:var(--text-soft);">Stanford</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial reveal" data-demo="testimonial2">
+          <i class="fa-solid fa-quote-right" style="font-size:2rem; color:var(--primary);" aria-hidden="true"></i>
+          <p>"The multiplayer feature is a game‑changer for remote teaching. Students collaborate seamlessly."</p>
+          <div class="author">
+            <div class="author-avatar" aria-label="Mark Rivera avatar">MR</div>
+            <div>
+              <h4>Mark Rivera</h4>
+              <span style="color:var(--text-soft);">Austin HS</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- cta -->
+    <section class="cta reveal" data-demo="cta" aria-label="Call to action">
+      <h2>start simulating <span style="color: var(--primary);">today</span></h2>
+      <p>Join 12,000+ classrooms using linq for free.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn-primary" data-demo="signup"><i class="fas fa-play" aria-hidden="true"></i> get started</a>
+        <a href="#" class="btn-outline" data-demo="plans"><i class="fa-regular fa-file-lines" aria-hidden="true"></i> plans</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="container" aria-label="Footer">
+    <div class="footer">
+      <div class="footer-col reveal">
+        <div class="logo" style="margin-bottom:1rem;">
+          <i class="fas fa-bolt" aria-hidden="true"></i>
+          <span>linq</span>
+        </div>
+        <p>Circuit simulation for the next generation. Forever free for education.</p>
+        <div class="social-links">
+          <i class="fa-brands fa-github" data-demo="github" role="button" tabindex="0" aria-label="GitHub"></i>
+          <i class="fa-brands fa-discord" data-demo="discord" role="button" tabindex="0" aria-label="Discord"></i>
+          <i class="fa-brands fa-x-twitter" data-demo="twitter" role="button" tabindex="0" aria-label="X Twitter"></i>
+        </div>
+      </div>
+      <div class="footer-col reveal">
+        <h4>product</h4>
+        <a href="#" data-demo="features">features</a>
+        <a href="#" data-demo="examples">examples</a>
+        <a href="#" data-demo="pricing">pricing</a>
+      </div>
+      <div class="footer-col reveal">
+        <h4>resources</h4>
+        <a href="#" data-demo="docs">documentation</a>
+        <a href="#" data-demo="tutorials">tutorials</a>
+        <a href="#" data-demo="community">community</a>
+      </div>
+      <div class="footer-col reveal">
+        <h4>legal</h4>
+        <a href="#" data-demo="privacy">privacy</a>
+        <a href="#" data-demo="terms">terms</a>
+      </div>
+    </div>
+    <div style="text-align: center; padding: 1rem 0; color: var(--text-soft); font-size: 0.85rem;">
+      &copy; 2025 linq. All rights reserved. | <a href="/sitemap.xml" style="color: var(--text-soft);">Sitemap</a>
+    </div>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="jsmain/script.js"></script>
+</body>
+</html>
